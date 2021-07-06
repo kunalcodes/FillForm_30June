@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/viewsecondtop1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#54aaeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Btnsecondback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="23dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_ant_design_arrow_left_outlined"
+        app:layout_constraintStart_toStartOf="@+id/viewsecondtop1"
+        app:layout_constraintTop_toTopOf="@+id/viewsecondtop1" />
+
+    <TextView
+        android:id="@+id/tvsecondaddbuyer"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Add Buyer"
+        app:layout_constraintBottom_toBottomOf="@+id/Btnsecondback"
+        app:layout_constraintStart_toEndOf="@+id/Btnsecondback"
+        app:layout_constraintTop_toTopOf="@+id/Btnsecondback" />
+
+    <ImageButton
+        android:id="@+id/BtnSecondright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_tick"
+        app:layout_constraintEnd_toEndOf="@+id/viewsecondtop1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewsecondtop2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#2f77b5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewsecondtop1" />
+
+    <TextView
+        android:id="@+id/tvsecondorgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:text="Organization Name"
+        app:layout_constraintBottom_toTopOf="@+id/etsecondorg"
+        app:layout_constraintStart_toStartOf="@+id/etsecondorg" />
+
+    <EditText
+        android:id="@+id/etsecondorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        android:inputType="textPersonName"
+        android:paddingVertical="20dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewsecondtop2"
+        app:layout_constraintEnd_toEndOf="@+id/viewsecondtop2"
+        app:layout_constraintStart_toStartOf="@+id/viewsecondtop2"
+        app:layout_constraintTop_toBottomOf="@+id/viewsecondtop1" />
+
+    <TextView
+        android:id="@+id/tvsecondname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Customer Name"
+        app:layout_constraintBottom_toTopOf="@+id/etsecondname"
+        app:layout_constraintStart_toStartOf="@+id/etsecondname" />
+
+    <EditText
+        android:id="@+id/etsecondname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewsecondtop2" />
+
+    <TextView
+        android:id="@+id/tvsecondphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Mobile Number"
+        app:layout_constraintBottom_toTopOf="@+id/etseondphone"
+        app:layout_constraintStart_toStartOf="@+id/etseondphone" />
+
+    <EditText
+        android:id="@+id/etseondphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsecondname" />
+    <TextView
+        android:id="@+id/tvsecondemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/etsecondemail"
+        app:layout_constraintStart_toStartOf="@+id/etsecondemail" />
+
+    <EditText
+        android:id="@+id/etsecondemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etseondphone" />
+    <TextView
+        android:id="@+id/tvsecondaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Address"
+        app:layout_constraintBottom_toTopOf="@+id/etmainaddress"
+        app:layout_constraintStart_toStartOf="@+id/etmainaddress" />
+
+    <EditText
+        android:id="@+id/etmainaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsecondemail" />
+
+    <TextView
+        android:id="@+id/tvsecondtaxid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Tax ID"
+        app:layout_constraintBottom_toTopOf="@+id/etsecondtaxid"
+        app:layout_constraintStart_toStartOf="@+id/etsecondtaxid" />
+
+    <EditText
+        android:id="@+id/etsecondtaxid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmainaddress" />
+
+    <TextView
+        android:id="@+id/tvsecondcompanyid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#999791"
+        android:layout_marginLeft="10dp"
+        android:text="Company ID"
+        app:layout_constraintBottom_toTopOf="@+id/etsecondcompanyid"
+        app:layout_constraintStart_toStartOf="@+id/etsecondcompanyid" />
+
+    <EditText
+        android:id="@+id/etsecondcompanyid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#999791"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsecondtaxid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
